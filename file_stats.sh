@@ -48,11 +48,14 @@ function csv_lines_for {
 
 function create_csv {
   echo "filename,lines of code,number of commits,date of first commit,date of last commit"
-  csv_lines_for "js"
-  csv_lines_for "handlebars"
+
+  for argument in "$@"
+  do
+    csv_lines_for $argument
+  done
 }
 
 cd $1
-create_csv
+create_csv $@
 cd -
 
