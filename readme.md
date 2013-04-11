@@ -6,8 +6,8 @@ Software](https://www.destroyallsoftware.com/) screencasts, and
 extensively documented in my ebook _[Unfuck A Monorail For Great
 Justice](http://gilesbowkett.blogspot.com/2013/03/new-ebook-unfuck-monorail-for-great.html)_.
 
-Use these when you want to quickly generate detailed history reports for
-git projects.
+Use these when you want to quickly generate meaningful history reports
+for git projects.
 
 ## stats
 
