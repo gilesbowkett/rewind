@@ -50,8 +50,8 @@ Also, where `file_stats.sh` will examine multiple file types,
 `determine_authors.sh` and `tally_authors.rb` assumes you're only
 working with one type of file at a time. Pull requests welcome!
 
-Running this code against extremely large projects (e.g. Rails) might be
-very slow.
+Caveat: Running this code against extremely large projects with very
+long histories (e.g. Rails) might be very slow.
 
 ## Why Rewind?
 
