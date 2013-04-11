@@ -6,8 +6,8 @@ Software](https://www.destroyallsoftware.com/) screencasts, and
 extensively documented in my ebook _[Unfuck A Monorail For Great
 Justice](http://gilesbowkett.blogspot.com/2013/03/new-ebook-unfuck-monorail-for-great.html)_.
 
-Use these when you're new to a project and you want some
-programmatically-generated history reports.
+Use these when you want to quickly generate detailed history reports for
+git projects.
 
 ## stats
 
@@ -39,7 +39,7 @@ You can do all that as a one-liner in bash like this:
 
     ruby tally_authors.rb <(cd /project && /this_dir/determine_authors.sh "js")
 
-The code isn't that tricky, and the output is easy to understand, but
+The code isn't tricky at all, and the output is easy to understand, but
 it's also easy to misconstrue. That's the tricky part. A developer
 could show up with few authorship events because they're new to a team,
 because they often do pair programming, because they prefer large
@@ -49,6 +49,9 @@ good judgement.
 Also, where `file_stats.sh` will examine multiple file types,
 `determine_authors.sh` and `tally_authors.rb` assumes you're only
 working with one type of file at a time. Pull requests welcome!
+
+Running this code against extremely large projects (e.g. Rails) might be
+very slow.
 
 ## Why Rewind?
 
