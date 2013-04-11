@@ -54,3 +54,6 @@ working with one type of file at a time. Pull requests welcome!
 
 <img src="http://s3.amazonaws.com/giles/rewind_041113/LiarsAtoD1-Rewind.jpg">
 
+[Rewind is currently a key character in the IDW _Transformers_
+comics](http://tfwiki.net/wiki/Rewind_(G1)#IDW_Generation_1_continuity).
+
