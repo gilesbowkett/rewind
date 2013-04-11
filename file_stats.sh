@@ -1,14 +1,3 @@
-# usage:
-#
-#   <airbook:giles> ↪  file_stats.sh > stats.csv
-#   <airbook:giles> ↪  open -a Numbers stats.csv
-#
-# now you can go into your spreadsheet widget of choice and sort to find out which
-# files are biggest, which files are most frequently modified, and which files
-# are oldest. I highly recommend viewing them on the iPad using the Numbers app,
-# since it kicks ass over Numbers for Mac, Google Spreadsheets, and pretty much
-# every other alternative I'm aware of.
-
 function git_history {
   git log $filename | grep "Date: "
 }
