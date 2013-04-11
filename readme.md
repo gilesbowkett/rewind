@@ -50,3 +50,7 @@ Also, where `file_stats.sh` will examine multiple file types,
 `determine_authors.sh` and `tally_authors.rb` assumes you're only
 working with one type of file at a time. Pull requests welcome!
 
+## Why Rewind?
+
+<img src="http://s3.amazonaws.com/giles/rewind_041113/LiarsAtoD1-Rewind.jpg">
+
