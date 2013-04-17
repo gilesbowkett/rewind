@@ -10,7 +10,7 @@ filename = ARGV[0]
 authorship = {}
 
 File.open(filename).each_line do |line|
-  author = line.gsub(/Author: /, "").chomp.split[0].downcase
+  author = line.gsub(/Author: /, "").chomp.split.tap(&:pop).join(' ').downcase
   if authorship[author]
     authorship[author] += 1
   else
