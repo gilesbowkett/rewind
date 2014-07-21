@@ -28,7 +28,7 @@ function legible_output {
 }
 
 function csv_lines_for {
-  for filename in `find . -iname *.$1`; do
+  for filename in $(find . -iname "*.$1"); do
     echo "`wc -l $filename` `number_of_commits` `first_commit` `last_commit`" |
     legible_output |
     xargs echo
