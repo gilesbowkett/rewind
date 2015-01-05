@@ -28,11 +28,18 @@ function legible_output {
 }
 
 function csv_lines_for {
+
+  STORED_IFS=$IFS
+  IFS=$(echo -en "\n\b")
+
   for filename in $(find . -iname "*.$1"); do
     echo "`wc -l $filename` `number_of_commits` `first_commit` `last_commit`" |
     legible_output |
     xargs echo
   done
+
+  IFS=$STORED_IFS
+
 }
 
 function create_csv {
