@@ -27,13 +27,18 @@ function legible_output {
   awk '{print $2 "," $1 "," $3 "," $6 " " $7 " " $9 "," $13 " " $14 " " $16}'
 }
 
+function lines_of_code {
+  echo $(wc -l $1) | sed 's/\(\/.*\)[ ]/\1_/'
+}
+
 function csv_lines_for {
 
+  # allow spaces in filenames, via file separator; re PR #7, Issue #5
   STORED_IFS=$IFS
   IFS=$(echo -en "\n\b")
 
   for filename in $(find . -iname "*.$1"); do
-    echo "`wc -l $filename` `number_of_commits` `first_commit` `last_commit`" |
+    echo "$(lines_of_code $filename) $(number_of_commits) $(first_commit) $(last_commit)" |
     legible_output |
     xargs echo
   done
