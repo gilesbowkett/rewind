@@ -60,3 +60,7 @@ long histories (e.g. Rails) might be very slow.
 [Rewind is currently a key character in the IDW _Transformers_
 comics](http://tfwiki.net/wiki/Rewind_\(G1\)#IDW_Generation_1_continuity).
 
+## license
+
+MIT license.
+
