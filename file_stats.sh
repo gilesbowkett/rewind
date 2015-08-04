@@ -57,6 +57,6 @@ function create_csv {
 }
 
 cd $1
-create_csv $@
+create_csv ${@:2:$#}
 cd -
 
